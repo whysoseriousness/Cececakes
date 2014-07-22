@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9425E176197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9425E175197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.m */; };
+		9425E179197CBAA900F2EBC9 /* BikeBuddiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9425E178197CBAA900F2EBC9 /* BikeBuddiesViewController.m */; };
+		9425E17D197D9C2600F2EBC9 /* logopapered.png in Resources */ = {isa = PBXBuildFile; fileRef = 9425E17C197D9C2600F2EBC9 /* logopapered.png */; };
+		9425E17F197DAD3300F2EBC9 /* bikeBuddiesIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9425E17E197DAD3300F2EBC9 /* bikeBuddiesIcon.png */; };
+		944DB9C1197E1650006E8FC7 /* chatIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 944DB9C0197E1650006E8FC7 /* chatIcon.png */; };
+		944DB9C4197E1909006E8FC7 /* ChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944DB9C3197E1909006E8FC7 /* ChatListViewController.m */; };
+		944DB9CA197E19A3006E8FC7 /* ChatPreviewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 944DB9C9197E19A3006E8FC7 /* ChatPreviewTableViewCell.m */; };
+		94582720197DE77D008FFA96 /* tandemFavoritesIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9458271F197DE77D008FFA96 /* tandemFavoritesIcon.png */; };
+		94582722197DE870008FFA96 /* findTandemsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 94582721197DE870008FFA96 /* findTandemsIcon.png */; };
+		94582724197DE945008FFA96 /* editProfileIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 94582723197DE945008FFA96 /* editProfileIcon.png */; };
+		94AAA4AD197B993D0017264B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AAA4AC197B993D0017264B /* Foundation.framework */; };
+		94AAA4AF197B993D0017264B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AAA4AE197B993D0017264B /* CoreGraphics.framework */; };
+		94AAA4B1197B993D0017264B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AAA4B0197B993D0017264B /* UIKit.framework */; };
+		94AAA4B7197B993D0017264B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94AAA4B5197B993D0017264B /* InfoPlist.strings */; };
+		94AAA4B9197B993D0017264B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AAA4B8197B993D0017264B /* main.m */; };
+		94AAA4BD197B993D0017264B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AAA4BC197B993D0017264B /* AppDelegate.m */; };
+		94AAA4C0197B993D0017264B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AAA4BE197B993D0017264B /* Main_iPhone.storyboard */; };
+		94AAA4C3197B993D0017264B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94AAA4C1197B993D0017264B /* Main_iPad.storyboard */; };
+		94AAA4C6197B993D0017264B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AAA4C5197B993D0017264B /* ViewController.m */; };
+		94AAA4C8197B993D0017264B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94AAA4C7197B993D0017264B /* Images.xcassets */; };
+		94AAA4CF197B993D0017264B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AAA4CE197B993D0017264B /* XCTest.framework */; };
+		94AAA4D0197B993D0017264B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AAA4AC197B993D0017264B /* Foundation.framework */; };
+		94AAA4D1197B993D0017264B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94AAA4B0197B993D0017264B /* UIKit.framework */; };
+		94AAA4D9197B993D0017264B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94AAA4D7197B993D0017264B /* InfoPlist.strings */; };
+		94AAA4DB197B993D0017264B /* tandemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AAA4DA197B993D0017264B /* tandemTests.m */; };
+		94AAA4E5197B99880017264B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 94AAA4E4197B99880017264B /* logo.png */; };
+		94AAA4EB197C85730017264B /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 94AAA4EA197C85730017264B /* background.png */; };
+		94AAA4EE197C8F090017264B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AAA4ED197C8F090017264B /* LoginViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94AAA4D2197B993D0017264B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94AAA4A1197B993D0017264B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94AAA4A8197B993D0017264B;
+			remoteInfo = tandem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9425E174197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BikeBuddyTableViewCell.h; path = ../BikeBuddyTableViewCell.h; sourceTree = "<group>"; };
+		9425E175197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BikeBuddyTableViewCell.m; path = ../BikeBuddyTableViewCell.m; sourceTree = "<group>"; };
+		9425E177197CBAA900F2EBC9 /* BikeBuddiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BikeBuddiesViewController.h; sourceTree = "<group>"; };
+		9425E178197CBAA900F2EBC9 /* BikeBuddiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BikeBuddiesViewController.m; sourceTree = "<group>"; };
+		9425E17C197D9C2600F2EBC9 /* logopapered.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logopapered.png; sourceTree = SOURCE_ROOT; };
+		9425E17E197DAD3300F2EBC9 /* bikeBuddiesIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bikeBuddiesIcon.png; sourceTree = "<group>"; };
+		944DB9C0197E1650006E8FC7 /* chatIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatIcon.png; sourceTree = "<group>"; };
+		944DB9C2197E1909006E8FC7 /* ChatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatListViewController.h; path = ../ChatListViewController.h; sourceTree = "<group>"; };
+		944DB9C3197E1909006E8FC7 /* ChatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatListViewController.m; path = ../ChatListViewController.m; sourceTree = "<group>"; };
+		944DB9C8197E19A3006E8FC7 /* ChatPreviewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatPreviewTableViewCell.h; sourceTree = "<group>"; };
+		944DB9C9197E19A3006E8FC7 /* ChatPreviewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatPreviewTableViewCell.m; sourceTree = "<group>"; };
+		9458271F197DE77D008FFA96 /* tandemFavoritesIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tandemFavoritesIcon.png; sourceTree = "<group>"; };
+		94582721197DE870008FFA96 /* findTandemsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findTandemsIcon.png; sourceTree = "<group>"; };
+		94582723197DE945008FFA96 /* editProfileIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editProfileIcon.png; sourceTree = "<group>"; };
+		94AAA4A9197B993D0017264B /* tandem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tandem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94AAA4AC197B993D0017264B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		94AAA4AE197B993D0017264B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		94AAA4B0197B993D0017264B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		94AAA4B4197B993D0017264B /* tandem-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tandem-Info.plist"; sourceTree = "<group>"; };
+		94AAA4B6197B993D0017264B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		94AAA4B8197B993D0017264B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		94AAA4BA197B993D0017264B /* tandem-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tandem-Prefix.pch"; sourceTree = "<group>"; };
+		94AAA4BB197B993D0017264B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		94AAA4BC197B993D0017264B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		94AAA4BF197B993D0017264B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		94AAA4C2197B993D0017264B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		94AAA4C4197B993D0017264B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		94AAA4C5197B993D0017264B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		94AAA4C7197B993D0017264B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		94AAA4CD197B993D0017264B /* tandemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tandemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94AAA4CE197B993D0017264B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		94AAA4D6197B993D0017264B /* tandemTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tandemTests-Info.plist"; sourceTree = "<group>"; };
+		94AAA4D8197B993D0017264B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		94AAA4DA197B993D0017264B /* tandemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tandemTests.m; sourceTree = "<group>"; };
+		94AAA4E4197B99880017264B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		94AAA4EA197C85730017264B /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		94AAA4EC197C8F090017264B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		94AAA4ED197C8F090017264B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94AAA4A6197B993D0017264B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94AAA4AF197B993D0017264B /* CoreGraphics.framework in Frameworks */,
+				94AAA4B1197B993D0017264B /* UIKit.framework in Frameworks */,
+				94AAA4AD197B993D0017264B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94AAA4CA197B993D0017264B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94AAA4CF197B993D0017264B /* XCTest.framework in Frameworks */,
+				94AAA4D1197B993D0017264B /* UIKit.framework in Frameworks */,
+				94AAA4D0197B993D0017264B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		944DB9C5197E1917006E8FC7 /* Bike Buddies List */ = {
+			isa = PBXGroup;
+			children = (
+				9425E174197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.h */,
+				9425E175197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.m */,
+				9425E177197CBAA900F2EBC9 /* BikeBuddiesViewController.h */,
+				9425E178197CBAA900F2EBC9 /* BikeBuddiesViewController.m */,
+			);
+			name = "Bike Buddies List";
+			sourceTree = "<group>";
+		};
+		944DB9C6197E1947006E8FC7 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				944DB9C8197E19A3006E8FC7 /* ChatPreviewTableViewCell.h */,
+				944DB9C9197E19A3006E8FC7 /* ChatPreviewTableViewCell.m */,
+				944DB9C2197E1909006E8FC7 /* ChatListViewController.h */,
+				944DB9C3197E1909006E8FC7 /* ChatListViewController.m */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		944DB9C7197E1952006E8FC7 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				94AAA4C4197B993D0017264B /* ViewController.h */,
+				94AAA4C5197B993D0017264B /* ViewController.m */,
+				94AAA4EC197C8F090017264B /* LoginViewController.h */,
+				94AAA4ED197C8F090017264B /* LoginViewController.m */,
+			);
+			name = "Main View";
+			sourceTree = "<group>";
+		};
+		94AAA4A0197B993D0017264B = {
+			isa = PBXGroup;
+			children = (
+				94AAA4B2197B993D0017264B /* tandem */,
+				94AAA4D4197B993D0017264B /* tandemTests */,
+				94AAA4AB197B993D0017264B /* Frameworks */,
+				94AAA4AA197B993D0017264B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94AAA4AA197B993D0017264B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94AAA4A9197B993D0017264B /* tandem.app */,
+				94AAA4CD197B993D0017264B /* tandemTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94AAA4AB197B993D0017264B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94AAA4AC197B993D0017264B /* Foundation.framework */,
+				94AAA4AE197B993D0017264B /* CoreGraphics.framework */,
+				94AAA4B0197B993D0017264B /* UIKit.framework */,
+				94AAA4CE197B993D0017264B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94AAA4B2197B993D0017264B /* tandem */ = {
+			isa = PBXGroup;
+			children = (
+				94AAA4BB197B993D0017264B /* AppDelegate.h */,
+				94AAA4BC197B993D0017264B /* AppDelegate.m */,
+				94AAA4BE197B993D0017264B /* Main_iPhone.storyboard */,
+				94AAA4C1197B993D0017264B /* Main_iPad.storyboard */,
+				944DB9C7197E1952006E8FC7 /* Main View */,
+				944DB9C6197E1947006E8FC7 /* Chat */,
+				944DB9C5197E1917006E8FC7 /* Bike Buddies List */,
+				94AAA4C7197B993D0017264B /* Images.xcassets */,
+				94AAA4B3197B993D0017264B /* Supporting Files */,
+			);
+			path = tandem;
+			sourceTree = "<group>";
+		};
+		94AAA4B3197B993D0017264B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94AAA4E6197B99910017264B /* images */,
+				94AAA4B4197B993D0017264B /* tandem-Info.plist */,
+				94AAA4B5197B993D0017264B /* InfoPlist.strings */,
+				94AAA4B8197B993D0017264B /* main.m */,
+				94AAA4BA197B993D0017264B /* tandem-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94AAA4D4197B993D0017264B /* tandemTests */ = {
+			isa = PBXGroup;
+			children = (
+				94AAA4DA197B993D0017264B /* tandemTests.m */,
+				94AAA4D5197B993D0017264B /* Supporting Files */,
+			);
+			path = tandemTests;
+			sourceTree = "<group>";
+		};
+		94AAA4D5197B993D0017264B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94AAA4D6197B993D0017264B /* tandemTests-Info.plist */,
+				94AAA4D7197B993D0017264B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94AAA4E6197B99910017264B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				94AAA4EA197C85730017264B /* background.png */,
+				9425E17E197DAD3300F2EBC9 /* bikeBuddiesIcon.png */,
+				944DB9C0197E1650006E8FC7 /* chatIcon.png */,
+				9425E17C197D9C2600F2EBC9 /* logopapered.png */,
+				94582721197DE870008FFA96 /* findTandemsIcon.png */,
+				9458271F197DE77D008FFA96 /* tandemFavoritesIcon.png */,
+				94582723197DE945008FFA96 /* editProfileIcon.png */,
+				94AAA4E4197B99880017264B /* logo.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94AAA4A8197B993D0017264B /* tandem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94AAA4DE197B993D0017264B /* Build configuration list for PBXNativeTarget "tandem" */;
+			buildPhases = (
+				94AAA4A5197B993D0017264B /* Sources */,
+				94AAA4A6197B993D0017264B /* Frameworks */,
+				94AAA4A7197B993D0017264B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tandem;
+			productName = tandem;
+			productReference = 94AAA4A9197B993D0017264B /* tandem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94AAA4CC197B993D0017264B /* tandemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94AAA4E1197B993D0017264B /* Build configuration list for PBXNativeTarget "tandemTests" */;
+			buildPhases = (
+				94AAA4C9197B993D0017264B /* Sources */,
+				94AAA4CA197B993D0017264B /* Frameworks */,
+				94AAA4CB197B993D0017264B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94AAA4D3197B993D0017264B /* PBXTargetDependency */,
+			);
+			name = tandemTests;
+			productName = tandemTests;
+			productReference = 94AAA4CD197B993D0017264B /* tandemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94AAA4A1197B993D0017264B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Joshua Martin";
+				TargetAttributes = {
+					94AAA4CC197B993D0017264B = {
+						TestTargetID = 94AAA4A8197B993D0017264B;
+					};
+				};
+			};
+			buildConfigurationList = 94AAA4A4197B993D0017264B /* Build configuration list for PBXProject "tandem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94AAA4A0197B993D0017264B;
+			productRefGroup = 94AAA4AA197B993D0017264B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94AAA4A8197B993D0017264B /* tandem */,
+				94AAA4CC197B993D0017264B /* tandemTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94AAA4A7197B993D0017264B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94582722197DE870008FFA96 /* findTandemsIcon.png in Resources */,
+				94AAA4C3197B993D0017264B /* Main_iPad.storyboard in Resources */,
+				9425E17D197D9C2600F2EBC9 /* logopapered.png in Resources */,
+				9425E17F197DAD3300F2EBC9 /* bikeBuddiesIcon.png in Resources */,
+				94AAA4EB197C85730017264B /* background.png in Resources */,
+				94AAA4E5197B99880017264B /* logo.png in Resources */,
+				94AAA4C8197B993D0017264B /* Images.xcassets in Resources */,
+				94582720197DE77D008FFA96 /* tandemFavoritesIcon.png in Resources */,
+				944DB9C1197E1650006E8FC7 /* chatIcon.png in Resources */,
+				94582724197DE945008FFA96 /* editProfileIcon.png in Resources */,
+				94AAA4C0197B993D0017264B /* Main_iPhone.storyboard in Resources */,
+				94AAA4B7197B993D0017264B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94AAA4CB197B993D0017264B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94AAA4D9197B993D0017264B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94AAA4A5197B993D0017264B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9425E179197CBAA900F2EBC9 /* BikeBuddiesViewController.m in Sources */,
+				9425E176197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.m in Sources */,
+				944DB9CA197E19A3006E8FC7 /* ChatPreviewTableViewCell.m in Sources */,
+				94AAA4EE197C8F090017264B /* LoginViewController.m in Sources */,
+				94AAA4C6197B993D0017264B /* ViewController.m in Sources */,
+				944DB9C4197E1909006E8FC7 /* ChatListViewController.m in Sources */,
+				94AAA4BD197B993D0017264B /* AppDelegate.m in Sources */,
+				94AAA4B9197B993D0017264B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94AAA4C9197B993D0017264B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94AAA4DB197B993D0017264B /* tandemTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94AAA4D3197B993D0017264B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94AAA4A8197B993D0017264B /* tandem */;
+			targetProxy = 94AAA4D2197B993D0017264B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94AAA4B5197B993D0017264B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94AAA4B6197B993D0017264B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		94AAA4BE197B993D0017264B /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94AAA4BF197B993D0017264B /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		94AAA4C1197B993D0017264B /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94AAA4C2197B993D0017264B /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		94AAA4D7197B993D0017264B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94AAA4D8197B993D0017264B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94AAA4DC197B993D0017264B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94AAA4DD197B993D0017264B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94AAA4DF197B993D0017264B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tandem/tandem-Prefix.pch";
+				INFOPLIST_FILE = "tandem/tandem-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		94AAA4E0197B993D0017264B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tandem/tandem-Prefix.pch";
+				INFOPLIST_FILE = "tandem/tandem-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		94AAA4E2197B993D0017264B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tandem.app/tandem";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tandem/tandem-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "tandemTests/tandemTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		94AAA4E3197B993D0017264B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tandem.app/tandem";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tandem/tandem-Prefix.pch";
+				INFOPLIST_FILE = "tandemTests/tandemTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94AAA4A4197B993D0017264B /* Build configuration list for PBXProject "tandem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94AAA4DC197B993D0017264B /* Debug */,
+				94AAA4DD197B993D0017264B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94AAA4DE197B993D0017264B /* Build configuration list for PBXNativeTarget "tandem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94AAA4DF197B993D0017264B /* Debug */,
+				94AAA4E0197B993D0017264B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94AAA4E1197B993D0017264B /* Build configuration list for PBXNativeTarget "tandemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94AAA4E2197B993D0017264B /* Debug */,
+				94AAA4E3197B993D0017264B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94AAA4A1197B993D0017264B /* Project object */;
+}
