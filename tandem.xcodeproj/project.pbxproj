@@ -35,6 +35,7 @@
 		94AAA4E5197B99880017264B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 94AAA4E4197B99880017264B /* logo.png */; };
 		94AAA4EB197C85730017264B /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 94AAA4EA197C85730017264B /* background.png */; };
 		94AAA4EE197C8F090017264B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AAA4ED197C8F090017264B /* LoginViewController.m */; };
+		94D1AB441980C5FD00003560 /* navigationBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D1AB431980C5FD00003560 /* navigationBarBackground.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		94AAA4EA197C85730017264B /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		94AAA4EC197C8F090017264B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		94AAA4ED197C8F090017264B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		94D1AB431980C5FD00003560 /* navigationBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBarBackground.png; sourceTree = "<group>"; };
+		94D1AB451980D05700003560 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +202,7 @@
 				94AAA4B5197B993D0017264B /* InfoPlist.strings */,
 				94AAA4B8197B993D0017264B /* main.m */,
 				94AAA4BA197B993D0017264B /* tandem-Prefix.pch */,
+				94D1AB451980D05700003560 /* Constants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -224,6 +228,7 @@
 		94AAA4E6197B99910017264B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				94D1AB431980C5FD00003560 /* navigationBarBackground.png */,
 				94AAA4EA197C85730017264B /* background.png */,
 				9425E17E197DAD3300F2EBC9 /* bikeBuddiesIcon.png */,
 				944DB9C0197E1650006E8FC7 /* chatIcon.png */,
@@ -312,6 +317,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D1AB441980C5FD00003560 /* navigationBarBackground.png in Resources */,
 				94582722197DE870008FFA96 /* findTandemsIcon.png in Resources */,
 				94AAA4C3197B993D0017264B /* Main_iPad.storyboard in Resources */,
 				9425E17D197D9C2600F2EBC9 /* logopapered.png in Resources */,

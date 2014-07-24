@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "LoginViewController.h"
 
-@interface ViewController : UIViewController{
+@interface ViewController : UIViewController<UITextFieldDelegate>{
     LoginViewController * loginViewController;
 }
 

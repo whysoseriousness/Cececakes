@@ -27,6 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.emailTextField.delegate = self.mainViewController;
+    self.passwordTextField.delegate = self.mainViewController;
     // Do any additional setup after loading the view.
 }
 

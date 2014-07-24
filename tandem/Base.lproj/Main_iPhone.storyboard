@@ -58,7 +58,7 @@
                     <connections>
                         <outlet property="createAccountButton" destination="cIP-xZ-IwC" id="C5x-cm-YIm"/>
                         <outlet property="loginButton" destination="dGm-ew-IBl" id="q3v-og-dHy"/>
-                        <segue destination="VXi-xa-QXu" kind="modal" identifier="LoginToMenuSegue" id="AUL-Hq-bcc"/>
+                        <segue destination="HS8-GT-D6n" kind="modal" identifier="LoginToMenuSegue" id="AUL-Hq-bcc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -164,7 +164,7 @@
                                 </connections>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="p95-C8-WD8">
-                                <rect key="frame" x="119" y="59" width="83" height="29"/>
+                                <rect key="frame" x="119" y="73" width="83" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="List"/>
@@ -203,25 +203,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tandem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2c-Kf-HOw">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91372555489999996" green="0.53333336109999996" blue="0.52156865600000002" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="33"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27L-uJ-N85">
-                                <rect key="frame" x="20" y="20" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Menu">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="VXi-xa-QXu" kind="modal" id="4sl-z9-g7W"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gy4-0C-cB5">
                                 <rect key="frame" x="98" y="73" width="124" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -381,7 +362,7 @@
             </objects>
             <point key="canvasLocation" x="647" y="40"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Tandem-->
         <scene sceneID="gid-sC-PNJ">
             <objects>
                 <viewController id="VXi-xa-QXu" sceneMemberID="viewController">
@@ -399,10 +380,10 @@
                                 <color key="backgroundColor" red="0.91372555494308472" green="0.53333336114883423" blue="0.5215686559677124" alpha="1" colorSpace="deviceRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chatIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="A0L-QY-sWB">
-                                <rect key="frame" x="21" y="411" width="70" height="60"/>
+                                <rect key="frame" x="21" y="391" width="70" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tandem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE9-Fy-SmV">
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tandem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE9-Fy-SmV">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.91372555494308472" green="0.53333336114883423" blue="0.5215686559677124" alpha="1" colorSpace="deviceRGB"/>
@@ -411,7 +392,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bikeBuddiesIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="wTa-Fc-caC">
-                                <rect key="frame" x="21" y="140" width="70" height="70"/>
+                                <rect key="frame" x="21" y="160" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="findTandemsIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="zqO-QO-xgc">
@@ -419,11 +400,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tandemFavoritesIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="RRN-Zm-UkR">
-                                <rect key="frame" x="21" y="62" width="70" height="60"/>
+                                <rect key="frame" x="21" y="92" width="70" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="editProfileIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="gZF-M5-H8x">
-                                <rect key="frame" x="21" y="331" width="70" height="60"/>
+                                <rect key="frame" x="21" y="316" width="70" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtR-88-gPR">
@@ -435,11 +416,11 @@
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wWn-iS-Adz" kind="modal" id="LEa-b6-GU8"/>
+                                    <segue destination="wWn-iS-Adz" kind="push" id="LEa-b6-GU8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UnZ-d7-Qts">
-                                <rect key="frame" x="121" y="75" width="177" height="34"/>
+                                <rect key="frame" x="121" y="105" width="177" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Your Tandem Favorites">
@@ -448,7 +429,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nm-Fu-9Oa">
-                                <rect key="frame" x="121" y="344" width="123" height="34"/>
+                                <rect key="frame" x="121" y="329" width="123" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Edit Your Profile">
@@ -456,11 +437,11 @@
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Kph-OY-Jt0" kind="modal" id="hEl-ix-ufV"/>
+                                    <segue destination="Kph-OY-Jt0" kind="push" id="hEl-ix-ufV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5is-Kh-Hdf">
-                                <rect key="frame" x="121" y="424" width="132" height="34"/>
+                                <rect key="frame" x="121" y="404" width="132" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="View Your Chats">
@@ -468,11 +449,11 @@
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="n6F-qG-5PV" kind="modal" id="o29-qg-c3L"/>
+                                    <segue destination="n6F-qG-5PV" kind="push" id="EZ4-Om-smo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JtG-lb-1hb">
-                                <rect key="frame" x="121" y="158" width="162" height="34"/>
+                                <rect key="frame" x="121" y="178" width="162" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="Find a Bike Buddy">
@@ -480,20 +461,22 @@
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cJY-j2-JJ4" kind="modal" id="Rvq-XS-EDz"/>
+                                    <segue destination="cJY-j2-JJ4" kind="push" id="Rvq-XS-EDz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Tandem" id="Jk8-Yf-8lZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l1g-Wx-rkL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047" y="104"/>
+            <point key="canvasLocation" x="1573" y="104"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oVu-9g-qAd">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7y-Ix-m3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="08i-NK-Pix" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RsW-80-4IG"/>
@@ -508,25 +491,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.91372555489999996" green="0.53333336109999996" blue="0.52156865600000002" alpha="1" colorSpace="deviceRGB"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tandem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVV-Z3-e8m">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91372555489999996" green="0.53333336109999996" blue="0.52156865600000002" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="33"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fr4-30-iz9">
-                                <rect key="frame" x="9" y="20" width="91" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Bike Buddies">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="cJY-j2-JJ4" kind="modal" id="FGM-Ux-pul"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="StJ-Y7-JY0">
                                 <rect key="frame" x="91" y="85" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -593,9 +557,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7y-Ix-m3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1959" y="104"/>
+            <point key="canvasLocation" x="2485" y="104"/>
         </scene>
         <!--Chat List View Controller-->
         <scene sceneID="GLV-rV-dTK">
@@ -614,29 +577,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.91372555489999996" green="0.53333336109999996" blue="0.52156865600000002" alpha="1" colorSpace="deviceRGB"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tandem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDT-PE-Pg2">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91372555489999996" green="0.53333336109999996" blue="0.52156865600000002" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="33"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3Y-7d-pf3">
-                                <rect key="frame" x="20" y="20" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Menu">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="VXi-xa-QXu" kind="modal" id="pWg-E2-QDG"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xlB-jh-l5g">
-                                <rect key="frame" x="0.0" y="49" width="320" height="519"/>
+                                <rect key="frame" x="0.0" y="65" width="320" height="503"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="LWJ-ks-g1R" customClass="ChatPreviewTableViewCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="56"/>
@@ -684,6 +628,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="fPA-bu-dwE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0P-Hb-wht" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -706,14 +651,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.91372555489999996" green="0.53333336109999996" blue="0.52156865600000002" alpha="1" colorSpace="deviceRGB"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tandem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMh-Bv-k6l">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91372555489999996" green="0.53333336109999996" blue="0.52156865600000002" alpha="1" colorSpace="deviceRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="33"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SOk-sL-nOF">
                                 <rect key="frame" x="99" y="73" width="123" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -774,7 +711,7 @@
                                             <outlet property="descriptionLabel" destination="IcY-ia-HHz" id="bla-GK-7pN"/>
                                             <outlet property="nameLabel" destination="CoD-aB-yK7" id="wA0-P5-ER8"/>
                                             <outlet property="ownsBikeLabel" destination="c7D-v6-srN" id="tdd-fM-QtX"/>
-                                            <segue destination="08i-NK-Pix" kind="modal" id="mAA-eb-anS"/>
+                                            <segue destination="08i-NK-Pix" kind="push" id="mAA-eb-anS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -782,32 +719,31 @@
                                     <outlet property="dataSource" destination="cJY-j2-JJ4" id="Exk-ac-83r"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2p-2g-Nza">
-                                <rect key="frame" x="20" y="20" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Menu">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="VXi-xa-QXu" kind="modal" id="i7Y-jo-Hju"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icH-6E-hlG">
-                                <rect key="frame" x="250" y="20" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Settings">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iNf-ew-mCb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1465" y="104"/>
+            <point key="canvasLocation" x="1991" y="104"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dHL-uy-Doe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HS8-GT-D6n" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gjR-4m-r2w">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VXi-xa-QXu" kind="relationship" relationship="rootViewController" id="1Kn-9Q-PpX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qTH-73-0qV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047" y="104"/>
         </scene>
     </scenes>
     <resources>
@@ -824,8 +760,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="FGM-Ux-pul"/>
-        <segue reference="pWg-E2-QDG"/>
-    </inferredMetricsTieBreakers>
 </document>

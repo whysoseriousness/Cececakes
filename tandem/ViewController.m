@@ -43,6 +43,8 @@
         self.createAccountButton.transform = CGAffineTransformMakeTranslation(0.0f, 1.25 * self.view.frame.size.width);
         loginViewController.view.transform = CGAffineTransformMakeTranslation(-1 * self.view.frame.size.width, 0.0f);
     [UIView commitAnimations];
+    
+    [self slideDownWithKeyboard];
 }
 
 - (void) animateOutLoginFields{
@@ -51,11 +53,58 @@
     self.createAccountButton.transform = CGAffineTransformMakeTranslation(0.0f, 0.0f);
     loginViewController.view.transform = CGAffineTransformMakeTranslation(0.0f, 0.0f);
     [UIView commitAnimations];
+    
+    [self slideDownWithKeyboard];
 }
 
 - (void) loginUser{
     // TODO: submit and manage login request
     [self performSegueWithIdentifier:@"LoginToMenuSegue" sender:self];
+}
+
+
+#pragma mark - TextField Related View Repositiong Methods
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    /* keyboard is visible, move views */
+    [self slideUpWithKeyboard];
+}
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+        [self slideDownFromTextField:textField];
+        return YES;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self slideDownWithKeyboard];
+//    for (UIView * txt in self.view.subviews){
+//        if ([txt isKindOfClass:[UITextField class]] && [txt isFirstResponder]) {
+////            [self slideDownFromTextField: (UITextField *) txt];
+//        }
+//    }
+}
+
+-(void) slideUpWithKeyboard{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.275];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    self.view.transform = CGAffineTransformMakeTranslation(0.0f, -1 * kKeyboardHeight);
+    [UIView commitAnimations];
+}
+
+-(void) slideDownWithKeyboard{
+    [self.view endEditing:YES];
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.15];
+    [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+    self.view.transform = CGAffineTransformMakeTranslation(0.0f, 0.0f);
+    [UIView commitAnimations];
+}
+
+-(void) slideDownFromTextField: (UITextField * ) textField{
+    [textField resignFirstResponder];
+    [self slideDownWithKeyboard];
 }
 
 @end

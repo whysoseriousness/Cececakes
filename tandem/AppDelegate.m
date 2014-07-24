@@ -13,6 +13,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+//    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:233 green:136 blue:133 alpha:1.0f]];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationBarBackground.png"] forBarMetrics:UIBarMetricsDefault];
+
+    UIColor * barelyGrayColor = [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0];
+
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           barelyGrayColor, NSForegroundColorAttributeName,
+                                                           [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:32.0], NSFontAttributeName, nil]];
+    [[UINavigationBar appearance] setTintColor:barelyGrayColor];
+
     return YES;
 }
 							
@@ -44,3 +54,4 @@
 }
 
 @end
+
