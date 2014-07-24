@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -295,7 +295,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJN-hm-VgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1485" y="1405"/>
+            <point key="canvasLocation" x="1465" y="1429"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Rhu-7h-q4j">
@@ -399,7 +399,7 @@
                                 <color key="backgroundColor" red="0.91372555494308472" green="0.53333336114883423" blue="0.5215686559677124" alpha="1" colorSpace="deviceRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chatIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="A0L-QY-sWB">
-                                <rect key="frame" x="20" y="424" width="64" height="49"/>
+                                <rect key="frame" x="21" y="411" width="70" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tandem" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xE9-Fy-SmV">
@@ -411,19 +411,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bikeBuddiesIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="wTa-Fc-caC">
-                                <rect key="frame" x="20" y="158" width="64" height="47"/>
+                                <rect key="frame" x="21" y="140" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="findTandemsIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="zqO-QO-xgc">
-                                <rect key="frame" x="20" y="244" width="64" height="56"/>
+                                <rect key="frame" x="21" y="242" width="70" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tandemFavoritesIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="RRN-Zm-UkR">
-                                <rect key="frame" x="20" y="58" width="64" height="64"/>
+                                <rect key="frame" x="21" y="62" width="70" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="editProfileIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="gZF-M5-H8x">
-                                <rect key="frame" x="20" y="350" width="64" height="21"/>
+                                <rect key="frame" x="21" y="331" width="70" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtR-88-gPR">
@@ -467,6 +467,9 @@
                                     <color key="titleColor" red="0.52156865600000002" green="0.48235297199999999" blue="0.46274513010000001" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="n6F-qG-5PV" kind="modal" id="o29-qg-c3L"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JtG-lb-1hb">
                                 <rect key="frame" x="121" y="158" width="162" height="34"/>
@@ -549,6 +552,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A word about your favorite bike" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOy-C0-PCo">
+                                <rect key="frame" x="73" y="347" width="175" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User since July 21st, 2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gew-n8-fMI">
                                 <rect key="frame" x="86" y="447" width="149" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -619,6 +629,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="VXi-xa-QXu" kind="modal" id="pWg-E2-QDG"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xlB-jh-l5g">
                                 <rect key="frame" x="0.0" y="49" width="320" height="519"/>
@@ -799,12 +812,12 @@
     </scenes>
     <resources>
         <image name="background.png" width="640" height="1136"/>
-        <image name="bikeBuddiesIcon.png" width="275" height="210"/>
-        <image name="chatIcon.png" width="76" height="51"/>
-        <image name="editProfileIcon.png" width="81" height="22"/>
-        <image name="findTandemsIcon.png" width="77" height="77"/>
+        <image name="bikeBuddiesIcon.png" width="497" height="378"/>
+        <image name="chatIcon.png" width="497" height="378"/>
+        <image name="editProfileIcon.png" width="497" height="378"/>
+        <image name="findTandemsIcon.png" width="497" height="378"/>
         <image name="logopapered.png" width="497" height="345"/>
-        <image name="tandemFavoritesIcon.png" width="81" height="78"/>
+        <image name="tandemFavoritesIcon.png" width="497" height="378"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -812,7 +825,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="4sl-z9-g7W"/>
-        <segue reference="Rvq-XS-EDz"/>
+        <segue reference="FGM-Ux-pul"/>
+        <segue reference="pWg-E2-QDG"/>
     </inferredMetricsTieBreakers>
 </document>
