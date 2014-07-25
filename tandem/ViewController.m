@@ -37,13 +37,12 @@
 
 - (IBAction)loginButtonClicked:(id)sender {
     [UIView beginAnimations:@"slideUI" context:nil];
-//        self.loginButton.transform         = CGAffineTransformMakeTranslation(-1.5 * self.view.frame.size.width, 0.0f);
-//        self.createAccountButton.transform = CGAffineTransformMakeTranslation(-1.5 * self.view.frame.size.width, 0.0f);
         self.loginButton.transform         = CGAffineTransformMakeTranslation(0.0f, 1.25 * self.view.frame.size.width);
         self.createAccountButton.transform = CGAffineTransformMakeTranslation(0.0f, 1.25 * self.view.frame.size.width);
         loginViewController.view.transform = CGAffineTransformMakeTranslation(-1 * self.view.frame.size.width, 0.0f);
     [UIView commitAnimations];
     
+    /* keyboard should not be visible, move views down (if they are already down nothing will happen) */
     [self slideDownWithKeyboard];
 }
 
@@ -54,6 +53,8 @@
     loginViewController.view.transform = CGAffineTransformMakeTranslation(0.0f, 0.0f);
     [UIView commitAnimations];
     
+    
+    /* keyboard should not be visible, move views down (if they are already down nothing will happen) */
     [self slideDownWithKeyboard];
 }
 
@@ -67,16 +68,18 @@
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
-    /* keyboard is visible, move views */
+    /* keyboard is visible, move views up */
     [self slideUpWithKeyboard];
 }
 
 -(BOOL) textFieldShouldReturn:(UITextField *)textField{
+        /* keyboard is no longer visible, move views down */
         [self slideDownFromTextField:textField];
         return YES;
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    /* keyboard is no longer visible, move views down */
     [self slideDownWithKeyboard];
 //    for (UIView * txt in self.view.subviews){
 //        if ([txt isKindOfClass:[UITextField class]] && [txt isFirstResponder]) {

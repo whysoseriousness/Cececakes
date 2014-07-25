@@ -5,6 +5,8 @@
 //  Created by Joshua Martin on 7/20/14.
 //  Copyright (c) 2014 Joshua Martin. All rights reserved.
 //
+//  NOTE ALL WARNINGS IN THIS FILE ARE A RESULT OF self.mainViewController
+//  BEING OF TYPE UIViewController instead of ViewController
 
 #import "LoginViewController.h"
 
