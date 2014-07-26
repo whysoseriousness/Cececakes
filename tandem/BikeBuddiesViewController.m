@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.tableData = [NSMutableArray arrayWithObject:@{@"name" : @"Josh", @"age" : @"21"}];
+    self.tableData = [NSMutableArray arrayWithObjects:@{@"name" : @"Josh", @"age" : @"21"},@{@"name" : @"cece", @"age" : @"22"}, @{@"name":@"sweeet mario",@"age" : @"25"}, nil];
     [self loadData];
     // Do any additional setup after loading the view.
 }
