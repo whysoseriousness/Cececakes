@@ -11,6 +11,7 @@
 		9425E179197CBAA900F2EBC9 /* BikeBuddiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9425E178197CBAA900F2EBC9 /* BikeBuddiesViewController.m */; };
 		9425E17D197D9C2600F2EBC9 /* logopapered.png in Resources */ = {isa = PBXBuildFile; fileRef = 9425E17C197D9C2600F2EBC9 /* logopapered.png */; };
 		9425E17F197DAD3300F2EBC9 /* bikeBuddiesIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9425E17E197DAD3300F2EBC9 /* bikeBuddiesIcon.png */; };
+		943F12F21982DF6100A6EA1D /* textFieldBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 943F12F11982DF6100A6EA1D /* textFieldBackground.png */; };
 		944DB9C1197E1650006E8FC7 /* chatIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 944DB9C0197E1650006E8FC7 /* chatIcon.png */; };
 		944DB9C4197E1909006E8FC7 /* ChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 944DB9C3197E1909006E8FC7 /* ChatListViewController.m */; };
 		944DB9CA197E19A3006E8FC7 /* ChatPreviewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 944DB9C9197E19A3006E8FC7 /* ChatPreviewTableViewCell.m */; };
@@ -55,6 +56,7 @@
 		9425E178197CBAA900F2EBC9 /* BikeBuddiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BikeBuddiesViewController.m; sourceTree = "<group>"; };
 		9425E17C197D9C2600F2EBC9 /* logopapered.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logopapered.png; sourceTree = SOURCE_ROOT; };
 		9425E17E197DAD3300F2EBC9 /* bikeBuddiesIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bikeBuddiesIcon.png; sourceTree = "<group>"; };
+		943F12F11982DF6100A6EA1D /* textFieldBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textFieldBackground.png; sourceTree = "<group>"; };
 		944DB9C0197E1650006E8FC7 /* chatIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chatIcon.png; sourceTree = "<group>"; };
 		944DB9C2197E1909006E8FC7 /* ChatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatListViewController.h; path = ../ChatListViewController.h; sourceTree = "<group>"; };
 		944DB9C3197E1909006E8FC7 /* ChatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatListViewController.m; path = ../ChatListViewController.m; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				94582721197DE870008FFA96 /* findTandemsIcon.png */,
 				9458271F197DE77D008FFA96 /* tandemFavoritesIcon.png */,
 				94582723197DE945008FFA96 /* editProfileIcon.png */,
+				943F12F11982DF6100A6EA1D /* textFieldBackground.png */,
 				94AAA4E4197B99880017264B /* logo.png */,
 			);
 			name = images;
@@ -326,6 +329,7 @@
 				94AAA4E5197B99880017264B /* logo.png in Resources */,
 				94AAA4C8197B993D0017264B /* Images.xcassets in Resources */,
 				94582720197DE77D008FFA96 /* tandemFavoritesIcon.png in Resources */,
+				943F12F21982DF6100A6EA1D /* textFieldBackground.png in Resources */,
 				944DB9C1197E1650006E8FC7 /* chatIcon.png in Resources */,
 				94582724197DE945008FFA96 /* editProfileIcon.png in Resources */,
 				94AAA4C0197B993D0017264B /* Main_iPhone.storyboard in Resources */,
