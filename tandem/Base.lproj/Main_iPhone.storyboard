@@ -790,6 +790,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="ageDistanceLabel" destination="GsN-qa-5DD" id="ajD-QL-2iv"/>
                                             <outlet property="avatarImageView" destination="epc-VN-lX0" id="6Hh-uG-aY0"/>
                                             <outlet property="descriptionLabel" destination="IcY-ia-HHz" id="bla-GK-7pN"/>
                                             <outlet property="nameLabel" destination="CoD-aB-yK7" id="wA0-P5-ER8"/>
