@@ -9,6 +9,7 @@
 //  BEING OF TYPE UIViewController instead of ViewController
 
 #import "LoginViewController.h"
+#import "ViewController.h"
 
 @interface LoginViewController ()
 

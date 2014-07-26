@@ -16,11 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="mHa-4I-uXy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="mHa-4I-uXy">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logopapered.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kzu-K3-qCh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logopapered.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kzu-K3-qCh">
                                 <rect key="frame" x="20" y="20" width="280" height="200"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <constraints>
@@ -28,9 +28,12 @@
                                     <constraint firstAttribute="width" constant="280" id="oHo-hN-xQQ"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGm-ew-IBl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGm-ew-IBl">
                                 <rect key="frame" x="20" y="382" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ohn-hO-owS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
@@ -40,7 +43,7 @@
                                     <action selector="loginButtonClicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ddd-hP-DqP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIP-xZ-IwC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIP-xZ-IwC">
                                 <rect key="frame" x="20" y="420" width="280" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="17"/>
@@ -54,6 +57,21 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kzu-K3-qCh" firstAttribute="trailing" secondItem="dGm-ew-IBl" secondAttribute="trailing" id="2xy-5f-973"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cIP-xZ-IwC" secondAttribute="bottom" constant="108" id="9iN-gQ-0Vw"/>
+                            <constraint firstItem="Kzu-K3-qCh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="G7W-PH-srS"/>
+                            <constraint firstItem="Kzu-K3-qCh" firstAttribute="leading" secondItem="dGm-ew-IBl" secondAttribute="leading" id="Hnt-zS-fil"/>
+                            <constraint firstItem="cIP-xZ-IwC" firstAttribute="top" secondItem="dGm-ew-IBl" secondAttribute="bottom" constant="8" symbolic="YES" id="O9H-MK-QGi"/>
+                            <constraint firstItem="Kzu-K3-qCh" firstAttribute="centerX" secondItem="mHa-4I-uXy" secondAttribute="centerX" id="Xgg-YA-kBR"/>
+                            <constraint firstItem="cIP-xZ-IwC" firstAttribute="leading" secondItem="dGm-ew-IBl" secondAttribute="leading" id="eeF-7O-XXy"/>
+                            <constraint firstItem="cIP-xZ-IwC" firstAttribute="trailing" secondItem="dGm-ew-IBl" secondAttribute="trailing" id="fFB-CR-Lka"/>
+                            <constraint firstAttribute="bottom" secondItem="mHa-4I-uXy" secondAttribute="bottom" id="gCF-ve-KuA"/>
+                            <constraint firstItem="mHa-4I-uXy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="l9e-ww-hSn"/>
+                            <constraint firstAttribute="bottom" secondItem="dGm-ew-IBl" secondAttribute="bottom" constant="156" id="ocl-RN-iim"/>
+                            <constraint firstItem="mHa-4I-uXy" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="wRe-GV-ENd"/>
+                            <constraint firstItem="Kzu-K3-qCh" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" symbolic="YES" id="zTX-yB-Jc4"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="createAccountButton" destination="cIP-xZ-IwC" id="C5x-cm-YIm"/>
@@ -583,7 +601,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="LWJ-ks-g1R" customClass="ChatPreviewTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatCell" rowHeight="56" id="LWJ-ks-g1R" customClass="ChatPreviewTableViewCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LWJ-ks-g1R" id="eP9-E3-fWr">
