@@ -26,7 +26,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.tableData = [NSMutableArray arrayWithObjects:@{@"name" : @"Josh", @"age" : @"21",@"location":@"new york",@"description":@"I make code",@"own":@"Owns a tandem bike"},@{@"name" : @"cece", @"age" : @"22",@"location":@"washington,dc",@"description":@"i make crepes",@"own":@"Without a tandem bike"}, @{@"name":@"sweeet mario",@"age" : @"25",@"location":@"new york",@"description":@"part-time gap model",@"own":@"Without a tandem bike"}, nil];
+    self.tableData = [NSMutableArray arrayWithObjects:
+                      @{@"name" : @"Josh",
+                        @"age" : @"21",
+                        @"location":@"new york",
+                        @"description":@"I make code",
+                        @"own":@"Owns a tandem bike"},
+                      @{@"name" : @"cece",
+                        @"age" : @"22",
+                        @"location":@"washington,dc",
+                        @"description":@"i make crepes",
+                        @"own":@"Without a tandem bike"},
+                      @{@"name":@"sweeet mario",
+                        @"age" : @"25",
+                        @"location":@"new york",
+                        @"description":@"part-time gap model",
+                        @"own":@"Without a tandem bike"},
+                      nil];
     [self loadData];
     // Do any additional setup after loading the view.
 }
