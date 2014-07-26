@@ -7,11 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol TranparentViewControllerDelegate;
 
 @interface TransparentViewController : UIViewController
 @property UIViewController * loadingViewController;
 
+@property (nonatomic, weak) id<TranparentViewControllerDelegate> delegate;
+
 -(void)open;
 -(void)close;
 - (IBAction)cancelButtonPressed:(id)sender;
+
+@end
+
+
+@protocol TranparentViewControllerDelegate <NSObject>
+@required
+// No requred Methods
+@optional
+-(void) transparentViewControllerDidClose: (TransparentViewController * ) transparentViewController;
 @end

@@ -68,6 +68,9 @@
         [self.view removeFromSuperview];
     }];
     
+    if (self.delegate && [self.delegate respondsToSelector:@selector(transparentViewControllerDidClose:)]) {
+        [self.delegate transparentViewControllerDidClose:self];
+    }
 }
 
 - (IBAction)cancelButtonPressed:(id)sender {
