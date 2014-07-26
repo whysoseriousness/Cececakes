@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TransparentViewController.h"
+
 @class ViewController;
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController{
+    TransparentViewController * transparentViewController;
+}
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property ViewController * mainViewController;

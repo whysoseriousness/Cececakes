@@ -8,13 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "LoginViewController.h"
+#import "SignUpViewController.h"
 
 @interface ViewController : UIViewController<UITextFieldDelegate>{
     LoginViewController * loginViewController;
+    SignUpViewController * signUpViewController;
 }
 
 - (IBAction) loginButtonClicked:(id)sender;
-- (void) animateOutLoginFields;
+- (IBAction)createAccountButtonClicked:(id)sender;
+- (void) animateOutTextFields;
 - (void) loginUser;
 
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;

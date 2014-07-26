@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94214FA619838EEE0086CD1C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94214FA519838EED0086CD1C /* MenuViewController.m */; };
+		94214FAA1983959E0086CD1C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94214FA91983959E0086CD1C /* SettingsViewController.m */; };
 		9425E176197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9425E175197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.m */; };
 		9425E179197CBAA900F2EBC9 /* BikeBuddiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9425E178197CBAA900F2EBC9 /* BikeBuddiesViewController.m */; };
 		9425E17D197D9C2600F2EBC9 /* logopapered.png in Resources */ = {isa = PBXBuildFile; fileRef = 9425E17C197D9C2600F2EBC9 /* logopapered.png */; };
@@ -37,6 +39,18 @@
 		94AAA4EB197C85730017264B /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 94AAA4EA197C85730017264B /* background.png */; };
 		94AAA4EE197C8F090017264B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AAA4ED197C8F090017264B /* LoginViewController.m */; };
 		94D1AB441980C5FD00003560 /* navigationBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D1AB431980C5FD00003560 /* navigationBarBackground.png */; };
+		94DF9FEE19836977009A066B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DF9FED19836977009A066B /* Parse.framework */; };
+		94DF9FF1198369A4009A066B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DF9FF0198369A4009A066B /* AudioToolbox.framework */; };
+		94DF9FF3198369AF009A066B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DF9FF2198369AF009A066B /* CFNetwork.framework */; };
+		94DF9FF5198369BB009A066B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DF9FF4198369BB009A066B /* CoreLocation.framework */; };
+		94DF9FF7198369C8009A066B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DF9FF6198369C8009A066B /* libz.dylib */; };
+		94DF9FF9198369D0009A066B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DF9FF8198369D0009A066B /* MobileCoreServices.framework */; };
+		94DF9FFB198369DA009A066B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DF9FFA198369DA009A066B /* QuartzCore.framework */; };
+		94DF9FFD198369E1009A066B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DF9FFC198369E1009A066B /* Security.framework */; };
+		94DF9FFF198369E6009A066B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DF9FFE198369E6009A066B /* StoreKit.framework */; };
+		94DFA001198369F1009A066B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DFA000198369F1009A066B /* SystemConfiguration.framework */; };
+		94DFA00719836B6C009A066B /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DFA00619836B6C009A066B /* SignUpViewController.m */; };
+		94DFA00A19837743009A066B /* TransparentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DFA00919837743009A066B /* TransparentViewController.m */; };
 		C1F3C435198340440081C1BD /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F3C434198340440081C1BD /* ChatViewController.m */; };
 		C1F3C436198340440081C1BD /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F3C434198340440081C1BD /* ChatViewController.m */; };
 /* End PBXBuildFile section */
@@ -52,6 +66,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94214FA419838EED0086CD1C /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		94214FA519838EED0086CD1C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		94214FA81983959E0086CD1C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		94214FA91983959E0086CD1C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		9425E174197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BikeBuddyTableViewCell.h; path = ../BikeBuddyTableViewCell.h; sourceTree = "<group>"; };
 		9425E175197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BikeBuddyTableViewCell.m; path = ../BikeBuddyTableViewCell.m; sourceTree = "<group>"; };
 		9425E177197CBAA900F2EBC9 /* BikeBuddiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BikeBuddiesViewController.h; sourceTree = "<group>"; };
@@ -93,6 +111,20 @@
 		94AAA4ED197C8F090017264B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		94D1AB431980C5FD00003560 /* navigationBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBarBackground.png; sourceTree = "<group>"; };
 		94D1AB451980D05700003560 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		94DF9FED19836977009A066B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		94DF9FF0198369A4009A066B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		94DF9FF2198369AF009A066B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		94DF9FF4198369BB009A066B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		94DF9FF6198369C8009A066B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		94DF9FF8198369D0009A066B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		94DF9FFA198369DA009A066B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		94DF9FFC198369E1009A066B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		94DF9FFE198369E6009A066B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		94DFA000198369F1009A066B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		94DFA00519836B6C009A066B /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SignUpViewController.h; path = ../SignUpViewController.h; sourceTree = "<group>"; };
+		94DFA00619836B6C009A066B /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SignUpViewController.m; path = ../SignUpViewController.m; sourceTree = "<group>"; };
+		94DFA00819837743009A066B /* TransparentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransparentViewController.h; sourceTree = "<group>"; };
+		94DFA00919837743009A066B /* TransparentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransparentViewController.m; sourceTree = "<group>"; };
 		C1F3C433198340440081C1BD /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		C1F3C434198340440081C1BD /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,8 +134,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94DFA001198369F1009A066B /* SystemConfiguration.framework in Frameworks */,
+				94DF9FFF198369E6009A066B /* StoreKit.framework in Frameworks */,
+				94DF9FFD198369E1009A066B /* Security.framework in Frameworks */,
+				94DF9FFB198369DA009A066B /* QuartzCore.framework in Frameworks */,
+				94DF9FF9198369D0009A066B /* MobileCoreServices.framework in Frameworks */,
+				94DF9FF7198369C8009A066B /* libz.dylib in Frameworks */,
+				94DF9FF5198369BB009A066B /* CoreLocation.framework in Frameworks */,
+				94DF9FF3198369AF009A066B /* CFNetwork.framework in Frameworks */,
+				94DF9FF1198369A4009A066B /* AudioToolbox.framework in Frameworks */,
 				94AAA4AF197B993D0017264B /* CoreGraphics.framework in Frameworks */,
 				94AAA4B1197B993D0017264B /* UIKit.framework in Frameworks */,
+				94DF9FEE19836977009A066B /* Parse.framework in Frameworks */,
 				94AAA4AD197B993D0017264B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +163,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94214FA719838EF90086CD1C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				94214FA419838EED0086CD1C /* MenuViewController.h */,
+				94214FA519838EED0086CD1C /* MenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		94214FAB198395A20086CD1C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				94214FA81983959E0086CD1C /* SettingsViewController.h */,
+				94214FA91983959E0086CD1C /* SettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		944DB9C5197E1917006E8FC7 /* Bike Buddies List */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,15 +205,17 @@
 			name = Chat;
 			sourceTree = "<group>";
 		};
-		944DB9C7197E1952006E8FC7 /* Main View */ = {
+		944DB9C7197E1952006E8FC7 /* Login and Registration */ = {
 			isa = PBXGroup;
 			children = (
 				94AAA4C4197B993D0017264B /* ViewController.h */,
 				94AAA4C5197B993D0017264B /* ViewController.m */,
 				94AAA4EC197C8F090017264B /* LoginViewController.h */,
 				94AAA4ED197C8F090017264B /* LoginViewController.m */,
+				94DFA00519836B6C009A066B /* SignUpViewController.h */,
+				94DFA00619836B6C009A066B /* SignUpViewController.m */,
 			);
-			name = "Main View";
+			name = "Login and Registration";
 			sourceTree = "<group>";
 		};
 		94AAA4A0197B993D0017264B = {
@@ -178,6 +240,16 @@
 		94AAA4AB197B993D0017264B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				94DFA000198369F1009A066B /* SystemConfiguration.framework */,
+				94DF9FFE198369E6009A066B /* StoreKit.framework */,
+				94DF9FFC198369E1009A066B /* Security.framework */,
+				94DF9FFA198369DA009A066B /* QuartzCore.framework */,
+				94DF9FF8198369D0009A066B /* MobileCoreServices.framework */,
+				94DF9FF6198369C8009A066B /* libz.dylib */,
+				94DF9FF4198369BB009A066B /* CoreLocation.framework */,
+				94DF9FF2198369AF009A066B /* CFNetwork.framework */,
+				94DF9FF0198369A4009A066B /* AudioToolbox.framework */,
+				94DF9FED19836977009A066B /* Parse.framework */,
 				94AAA4AC197B993D0017264B /* Foundation.framework */,
 				94AAA4AE197B993D0017264B /* CoreGraphics.framework */,
 				94AAA4B0197B993D0017264B /* UIKit.framework */,
@@ -193,9 +265,12 @@
 				94AAA4BC197B993D0017264B /* AppDelegate.m */,
 				94AAA4BE197B993D0017264B /* Main_iPhone.storyboard */,
 				94AAA4C1197B993D0017264B /* Main_iPad.storyboard */,
-				944DB9C7197E1952006E8FC7 /* Main View */,
+				94214FAB198395A20086CD1C /* Settings */,
+				94214FA719838EF90086CD1C /* Menu */,
+				944DB9C7197E1952006E8FC7 /* Login and Registration */,
 				944DB9C6197E1947006E8FC7 /* Chat */,
 				944DB9C5197E1917006E8FC7 /* Bike Buddies List */,
+				94DFA00B19837749009A066B /* Other */,
 				94AAA4C7197B993D0017264B /* Images.xcassets */,
 				94AAA4B3197B993D0017264B /* Supporting Files */,
 			);
@@ -248,6 +323,15 @@
 				94AAA4E4197B99880017264B /* logo.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		94DFA00B19837749009A066B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				94DFA00819837743009A066B /* TransparentViewController.h */,
+				94DFA00919837743009A066B /* TransparentViewController.m */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,9 +448,13 @@
 				94AAA4EE197C8F090017264B /* LoginViewController.m in Sources */,
 				94AAA4C6197B993D0017264B /* ViewController.m in Sources */,
 				944DB9C4197E1909006E8FC7 /* ChatListViewController.m in Sources */,
+				94DFA00A19837743009A066B /* TransparentViewController.m in Sources */,
+				94214FA619838EEE0086CD1C /* MenuViewController.m in Sources */,
+				94DFA00719836B6C009A066B /* SignUpViewController.m in Sources */,
 				94AAA4BD197B993D0017264B /* AppDelegate.m in Sources */,
 				94AAA4B9197B993D0017264B /* main.m in Sources */,
 				C1F3C435198340440081C1BD /* ChatViewController.m in Sources */,
+				94214FAA1983959E0086CD1C /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +590,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tandem/tandem-Prefix.pch";
 				INFOPLIST_FILE = "tandem/tandem-Info.plist";
@@ -515,6 +607,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tandem/tandem-Prefix.pch";
 				INFOPLIST_FILE = "tandem/tandem-Info.plist";
@@ -531,6 +627,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tandem/tandem-Prefix.pch";
@@ -553,6 +650,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "tandem/tandem-Prefix.pch";

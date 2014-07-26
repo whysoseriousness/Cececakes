@@ -26,6 +26,19 @@
     loginViewFrame.origin.y = 225;
     loginViewFrame.origin.x = loginViewFrame.origin.x + self.view.frame.size.width;
     loginViewController.view.frame = loginViewFrame;
+    
+    
+    
+    signUpViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SignUpViewController"];
+    signUpViewController.mainViewController = self;
+    [self.view addSubview: signUpViewController.view];
+    
+    CGRect signUpViewFrame = signUpViewController.view.frame;
+    signUpViewFrame.origin.y = 225;
+    signUpViewFrame.origin.x = signUpViewFrame.origin.x - self.view.frame.size.width;
+    signUpViewController.view.frame = signUpViewFrame;
+    
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -46,11 +59,24 @@
     [self slideDownWithKeyboard];
 }
 
-- (void) animateOutLoginFields{
+- (IBAction)createAccountButtonClicked:(id)sender {
+    
     [UIView beginAnimations:@"slideUI" context:nil];
-    self.loginButton.transform         = CGAffineTransformMakeTranslation(0.0f, 0.0f);
-    self.createAccountButton.transform = CGAffineTransformMakeTranslation(0.0f, 0.0f);
-    loginViewController.view.transform = CGAffineTransformMakeTranslation(0.0f, 0.0f);
+    self.loginButton.transform         = CGAffineTransformMakeTranslation(0.0f, 1.25 * self.view.frame.size.width);
+    self.createAccountButton.transform = CGAffineTransformMakeTranslation(0.0f, 1.25 * self.view.frame.size.width);
+    signUpViewController.view.transform = CGAffineTransformMakeTranslation(self.view.frame.size.width, 0.0f);
+    [UIView commitAnimations];
+    
+    /* keyboard should not be visible, move views down (if they are already down nothing will happen) */
+    [self slideDownWithKeyboard];
+}
+
+- (void) animateOutTextFields{
+    [UIView beginAnimations:@"slideUI" context:nil];
+    self.loginButton.transform          = CGAffineTransformMakeTranslation(0.0f, 0.0f);
+    self.createAccountButton.transform  = CGAffineTransformMakeTranslation(0.0f, 0.0f);
+    loginViewController.view.transform  = CGAffineTransformMakeTranslation(0.0f, 0.0f);
+    signUpViewController.view.transform = CGAffineTransformMakeTranslation(0.0f, 0.0f);
     [UIView commitAnimations];
     
     
@@ -62,6 +88,7 @@
     // TODO: submit and manage login request
     [self performSegueWithIdentifier:@"LoginToMenuSegue" sender:self];
 }
+
 
 
 #pragma mark - TextField Related View Repositiong Methods

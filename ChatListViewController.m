@@ -28,6 +28,7 @@
     [super viewDidLoad];
 //    self.navigationController.navigationBar.topItem.title = @"Chats";
     self.title = @"Chats";
+    self.tableData = [NSMutableArray arrayWithObjects:@{@"name" : @"Josh", @"lastMessagePreview" : @"Let's tandem! :D", @"time" : @"1:13"}, nil];
     // Do any additional setup after loading the view.
 }
 
@@ -47,5 +48,22 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - UITableViewDataSource Methods
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.tableData.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    ChatPreviewTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ChatPreviewTableViewCell" forIndexPath:indexPath];
+    NSDictionary * data = [self.tableData objectAtIndex:indexPath.row];
+
+    cell.nameLabel.text = data[@"name"];
+    cell.lastMessagePreviewLabel.text = data[@"lastMessagePreview"];
+    cell.dateLabel.text = data[@"time"];
+    
+    return cell;
+}
 
 @end

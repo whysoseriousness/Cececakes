@@ -7,11 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Initialize Parse
+    [Parse setApplicationId:@"w2amT7h5vctanqCE5nDFk1XotIqSStTk2zcE07KP"
+                  clientKey:@"a4jAWNWKQqlhkPdeTVfG7k55SQAqAp75p6RvEwOb"];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     // Override point for customization after application launch.
 //    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:233 green:136 blue:133 alpha:1.0f]];
     [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationBarBackground.png"] forBarMetrics:UIBarMetricsDefault];
@@ -23,6 +29,14 @@
                                                            [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:32.0], NSFontAttributeName, nil]];
     [[UINavigationBar appearance] setTintColor:barelyGrayColor];
 
+    // If the user isn't logged in yet, show the login view
+    PFUser *currentUser = [PFUser currentUser];
+    if (!currentUser) {
+        UIViewController* rootController = [[UIStoryboard storyboardWithName:@"Main_iPhone" bundle:[NSBundle mainBundle]] instantiateViewControllerWithIdentifier:@"ViewController"];
+        self.window.rootViewController = rootController;
+        
+    }
+    
     return YES;
 }
 							

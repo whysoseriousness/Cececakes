@@ -53,13 +53,30 @@
 */
 
 - (IBAction)cancelButtonPressed:(id)sender {
-    if ([self.mainViewController respondsToSelector:@selector(animateOutLoginFields)]) {
-        [self.mainViewController performSelector:@selector(animateOutLoginFields) withObject:nil afterDelay:0.0f];
+    if ([self.mainViewController respondsToSelector:@selector(animateOutTextFields)]) {
+        [self.mainViewController performSelector:@selector(animateOutTextFields) withObject:nil afterDelay:0.0f];
     }
 }
+
 - (IBAction)loginButtonPressed:(id)sender {
-    if ([self.mainViewController respondsToSelector:@selector(loginUser)]) {
-        [self.mainViewController performSelector:@selector(loginUser) withObject:nil afterDelay:0.0f];
+    NSString * email = self.emailTextField.text;
+    NSString * password = self.passwordTextField.text;
+    if (![email isEqualToString:@""] && ![password isEqualToString:@""]) {
+        transparentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TransparentViewController"];
+        transparentViewController.loadingViewController = self.mainViewController;
+        [transparentViewController open];
+        
+        [PFUser logInWithUsernameInBackground:email password:password block:^(PFUser *user, NSError *error) {
+            if(!error){
+                if ([self.mainViewController respondsToSelector:@selector(loginUser)]) {
+                    [self.mainViewController performSelector:@selector(loginUser) withObject:nil afterDelay:0.0f];
+                }
+            }else{
+                NSLog(@"Error When Logging In: %@", error);
+            }
+            [transparentViewController close];
+        }];
     }
 }
+
 @end

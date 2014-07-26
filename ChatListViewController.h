@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChatPreviewTableViewCell.h"
 
-@interface ChatListViewController : UIViewController
-
+@interface ChatListViewController : UIViewController <UITableViewDataSource>
+@property NSMutableArray * tableData;
 @end
