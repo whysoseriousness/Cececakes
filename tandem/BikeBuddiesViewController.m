@@ -32,11 +32,13 @@
                         @"location":@"new york",
                         @"description":@"I make code",
                         @"own":@"Owns a tandem bike"},
+                      
                       @{@"name" : @"cece",
                         @"age" : @"22",
                         @"location":@"washington,dc",
                         @"description":@"i make crepes",
                         @"own":@"Without a tandem bike"},
+                      
                       @{@"name":@"sweeet mario",
                         @"age" : @"25",
                         @"location":@"new york",
