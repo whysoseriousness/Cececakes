@@ -37,6 +37,8 @@
 		94AAA4EB197C85730017264B /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 94AAA4EA197C85730017264B /* background.png */; };
 		94AAA4EE197C8F090017264B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AAA4ED197C8F090017264B /* LoginViewController.m */; };
 		94D1AB441980C5FD00003560 /* navigationBarBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D1AB431980C5FD00003560 /* navigationBarBackground.png */; };
+		C1F3C435198340440081C1BD /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F3C434198340440081C1BD /* ChatViewController.m */; };
+		C1F3C436198340440081C1BD /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F3C434198340440081C1BD /* ChatViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		94AAA4ED197C8F090017264B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		94D1AB431980C5FD00003560 /* navigationBarBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigationBarBackground.png; sourceTree = "<group>"; };
 		94D1AB451980D05700003560 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		C1F3C433198340440081C1BD /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		C1F3C434198340440081C1BD /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 		944DB9C6197E1947006E8FC7 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				C1F3C433198340440081C1BD /* ChatViewController.h */,
+				C1F3C434198340440081C1BD /* ChatViewController.m */,
 				944DB9C8197E19A3006E8FC7 /* ChatPreviewTableViewCell.h */,
 				944DB9C9197E19A3006E8FC7 /* ChatPreviewTableViewCell.m */,
 				944DB9C2197E1909006E8FC7 /* ChatListViewController.h */,
@@ -360,6 +366,7 @@
 				944DB9C4197E1909006E8FC7 /* ChatListViewController.m in Sources */,
 				94AAA4BD197B993D0017264B /* AppDelegate.m in Sources */,
 				94AAA4B9197B993D0017264B /* main.m in Sources */,
+				C1F3C435198340440081C1BD /* ChatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1F3C436198340440081C1BD /* ChatViewController.m in Sources */,
 				94AAA4DB197B993D0017264B /* tandemTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
