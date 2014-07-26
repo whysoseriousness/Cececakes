@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		94214FA619838EEE0086CD1C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94214FA519838EED0086CD1C /* MenuViewController.m */; };
 		94214FAA1983959E0086CD1C /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94214FA91983959E0086CD1C /* SettingsViewController.m */; };
+		94214FAD19839A570086CD1C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94214FAC19839A570086CD1C /* Parse.framework */; };
 		9425E176197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9425E175197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.m */; };
 		9425E179197CBAA900F2EBC9 /* BikeBuddiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9425E178197CBAA900F2EBC9 /* BikeBuddiesViewController.m */; };
 		9425E17D197D9C2600F2EBC9 /* logopapered.png in Resources */ = {isa = PBXBuildFile; fileRef = 9425E17C197D9C2600F2EBC9 /* logopapered.png */; };
@@ -70,6 +71,7 @@
 		94214FA519838EED0086CD1C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		94214FA81983959E0086CD1C /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		94214FA91983959E0086CD1C /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		94214FAC19839A570086CD1C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		9425E174197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BikeBuddyTableViewCell.h; path = ../BikeBuddyTableViewCell.h; sourceTree = "<group>"; };
 		9425E175197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BikeBuddyTableViewCell.m; path = ../BikeBuddyTableViewCell.m; sourceTree = "<group>"; };
 		9425E177197CBAA900F2EBC9 /* BikeBuddiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BikeBuddiesViewController.h; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				94DF9FF3198369AF009A066B /* CFNetwork.framework in Frameworks */,
 				94DF9FF1198369A4009A066B /* AudioToolbox.framework in Frameworks */,
 				94AAA4AF197B993D0017264B /* CoreGraphics.framework in Frameworks */,
+				94214FAD19839A570086CD1C /* Parse.framework in Frameworks */,
 				94AAA4B1197B993D0017264B /* UIKit.framework in Frameworks */,
 				94DF9FEE19836977009A066B /* Parse.framework in Frameworks */,
 				94AAA4AD197B993D0017264B /* Foundation.framework in Frameworks */,
@@ -250,6 +253,7 @@
 				94DF9FF2198369AF009A066B /* CFNetwork.framework */,
 				94DF9FF0198369A4009A066B /* AudioToolbox.framework */,
 				94DF9FED19836977009A066B /* Parse.framework */,
+				94214FAC19839A570086CD1C /* Parse.framework */,
 				94AAA4AC197B993D0017264B /* Foundation.framework */,
 				94AAA4AE197B993D0017264B /* CoreGraphics.framework */,
 				94AAA4B0197B993D0017264B /* UIKit.framework */,
