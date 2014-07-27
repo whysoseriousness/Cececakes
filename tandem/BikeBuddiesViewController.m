@@ -26,7 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.tableData = [NSMutableArray arrayWithObjects:
+    
+    self.tableData = [NSMutableArray array];
+    
+    /*self.tableData = [NSMutableArray arrayWithObjects:
                       @{@"name" : @"Josh",
                         @"age" : @"21",
                         @"location":@"new york",
@@ -45,7 +48,19 @@
                         @"description":@"part-time gap model",
                         @"own":@"Without a tandem bike"},
                       nil];
-    [self loadData];
+    */
+    
+    PFQuery *query = [PFUser query];
+    [query findObjectsInBackgroundWithBlock: ^(NSArray *objects, NSError *error) {
+        if (!error) {
+            self.tableData = objects;
+            [self.bikeBuddiesTableView reloadData];
+            NSLog(@"%@", objects);
+        } else {
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+    }];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -67,10 +82,10 @@
 */
 #pragma mark - Data
 
-- (void) loadData{
+//- (void) loadData{
 //    self.tableData = [data from server] TODO
 //    [self.bikeBuddiesTableView reloadData];
-}
+//}
 
 #pragma mark - UITableViewDataSource Methods
 
@@ -80,13 +95,18 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     BikeBuddyTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"BikeBuddyTableViewCell" forIndexPath:indexPath];
+    
     NSDictionary * buddy = [self.tableData objectAtIndex:indexPath.row];
     cell.backgroundColor = [UIColor clearColor];
     
+    cell.nameLabel.text = [buddy objectForKey:@"username"];
+    
+    /*
     cell.nameLabel.text = [buddy objectForKey:@"name"];
     cell.ageDistanceLabel.text = [NSString stringWithFormat:@"%@ | %@", [buddy objectForKey:@"age"], [buddy objectForKey:@"location"]];
     cell.descriptionLabel.text = [buddy objectForKey:@"description"];
     cell.ownsBikeLabel.text = [buddy objectForKey:@"own"];
+    */
     
     return cell;
 }

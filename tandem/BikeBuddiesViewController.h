@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "BikeBuddyTableViewCell.h"
+#import <Parse/Parse.h>
 
 @interface BikeBuddiesViewController : UIViewController <UITableViewDataSource>
 
 @property NSMutableArray * tableData;
+@property (weak, nonatomic) IBOutlet UITableView *bikeBuddiesTableView;
 
 @end
