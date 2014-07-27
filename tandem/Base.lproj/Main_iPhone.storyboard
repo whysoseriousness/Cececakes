@@ -293,10 +293,10 @@
             </objects>
             <point key="canvasLocation" x="1047" y="-608"/>
         </scene>
-        <!--View Controller-->
+        <!--Edit Profile View Controller-->
         <scene sceneID="VX0-dC-H6U">
             <objects>
-                <viewController id="Kph-OY-Jt0" sceneMemberID="viewController">
+                <viewController id="Kph-OY-Jt0" customClass="EditProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KKh-rf-TC7"/>
                         <viewControllerLayoutGuide type="bottom" id="esy-iI-o6e"/>
@@ -384,10 +384,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBz-5b-Okm">
+                                <rect key="frame" x="119" y="223" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Save Profile">
+                                    <color key="titleColor" red="0.52156865600000002" green="0.48235297199999999" blue="0.46274513010000001" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveProfileButtonPressed:" destination="Kph-OY-Jt0" eventType="touchUpInside" id="YfV-00-V2p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="5Lh-f5-ab2"/>
+                    <connections>
+                        <outlet property="editAgeViewController" destination="tPJ-ER-WED" id="fYq-do-j5m"/>
+                        <outlet property="editBikeOwnerViewController" destination="RmU-e1-nY2" id="mG5-LL-7MR"/>
+                        <outlet property="editInfoPersoViewController" destination="Tuz-PU-Uc5" id="M5B-St-7l6"/>
+                        <outlet property="editLocationViewController" destination="rbd-CX-46X" id="Wab-oC-JL0"/>
+                        <outlet property="editNameViewController" destination="yVw-7y-Wxz" id="fAP-ec-5OG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJN-hm-VgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
