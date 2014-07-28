@@ -42,7 +42,9 @@
     // treeData = [[SampleData alloc] init];
     //profileuser = (PFUser *)self.profileuser;
     self.name.text = [self.profileuser objectForKey:@"name"];
-    
+    self.age.text = [self.profileuser objectForKey:@"age"];
+    self.location.text = [self.profileuser objectForKey:@"location"];
+    self.description.text = [self.profileuser objectForKey:@"description"];
 }
 
 /*

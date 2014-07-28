@@ -778,6 +778,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="LGI-Ng-Z5g"/>
                     <connections>
+                        <outlet property="age" destination="jj4-8s-EDJ" id="tlh-yZ-zWU"/>
+                        <outlet property="description" destination="nGF-P9-BQ0" id="HlT-4I-4FK"/>
+                        <outlet property="location" destination="cu8-00-I5y" id="LEH-eN-MpN"/>
                         <outlet property="name" destination="ZIW-Ff-heK" id="EWr-NT-UjS"/>
                     </connections>
                 </viewController>

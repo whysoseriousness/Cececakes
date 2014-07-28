@@ -12,5 +12,8 @@
 @interface ProfileViewController : UIViewController
 @property (nonatomic,strong) PFUser *profileuser;
 @property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *age;
+@property (weak, nonatomic) IBOutlet UILabel *description;
+@property (weak, nonatomic) IBOutlet UILabel *location;
 
 @end
