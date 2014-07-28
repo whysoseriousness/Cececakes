@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BikeBuddyTableViewCell.h"
 #import <Parse/Parse.h>
+#import "ProfileViewController.h"
 
 @interface BikeBuddiesViewController : UIViewController <UITableViewDataSource>
 

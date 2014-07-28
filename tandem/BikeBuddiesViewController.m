@@ -89,6 +89,16 @@
 //    [self.bikeBuddiesTableView reloadData];
 //}
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+        ProfileViewController *profilepage = [segue destinationViewController];
+        
+        profilepage.profileuser = [self.tableData objectAtIndex:[self.bikeBuddiesTableView indexPathForSelectedRow].row];
+        
+    }
+}
+
+
 #pragma mark - UITableViewDataSource Methods
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

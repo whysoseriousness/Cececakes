@@ -59,6 +59,8 @@
 		C10BA20B19847509006F7031 /* ceceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10BA20919847509006F7031 /* ceceTableViewController.m */; };
 		C19DC8991984A595000F9B5F /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DC8981984A595000F9B5F /* EditProfileViewController.m */; };
 		C19DC89A1984A595000F9B5F /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DC8981984A595000F9B5F /* EditProfileViewController.m */; };
+		C1EB3D851985E933005ED123 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EB3D841985E933005ED123 /* ProfileViewController.m */; };
+		C1EB3D861985E933005ED123 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EB3D841985E933005ED123 /* ProfileViewController.m */; };
 		C1F3C435198340440081C1BD /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F3C434198340440081C1BD /* ChatViewController.m */; };
 		C1F3C436198340440081C1BD /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F3C434198340440081C1BD /* ChatViewController.m */; };
 /* End PBXBuildFile section */
@@ -141,6 +143,8 @@
 		C10BA20919847509006F7031 /* ceceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ceceTableViewController.m; path = ../ceceTableViewController.m; sourceTree = "<group>"; };
 		C19DC8971984A595000F9B5F /* EditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
 		C19DC8981984A595000F9B5F /* EditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
+		C1EB3D831985E933005ED123 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		C1EB3D841985E933005ED123 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		C1F3C433198340440081C1BD /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		C1F3C434198340440081C1BD /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -512,6 +516,7 @@
 			files = (
 				9425E179197CBAA900F2EBC9 /* BikeBuddiesViewController.m in Sources */,
 				C10BA20A19847509006F7031 /* ceceTableViewController.m in Sources */,
+				C1EB3D851985E933005ED123 /* ProfileViewController.m in Sources */,
 				C19DC8991984A595000F9B5F /* EditProfileViewController.m in Sources */,
 				9425E176197CBA5A00F2EBC9 /* BikeBuddyTableViewCell.m in Sources */,
 				944DB9CA197E19A3006E8FC7 /* ChatPreviewTableViewCell.m in Sources */,
@@ -536,6 +541,7 @@
 				C1F3C436198340440081C1BD /* ChatViewController.m in Sources */,
 				C10BA20B19847509006F7031 /* ceceTableViewController.m in Sources */,
 				94AAA4DB197B993D0017264B /* tandemTests.m in Sources */,
+				C1EB3D861985E933005ED123 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

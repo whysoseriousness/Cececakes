@@ -703,10 +703,10 @@
             </objects>
             <point key="canvasLocation" x="1573" y="104"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="oVu-9g-qAd">
             <objects>
-                <viewController id="08i-NK-Pix" sceneMemberID="viewController">
+                <viewController id="08i-NK-Pix" customClass="ProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RsW-80-4IG"/>
                         <viewControllerLayoutGuide type="bottom" id="xzq-I4-A6t"/>
@@ -789,6 +789,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="LGI-Ng-Z5g"/>
+                    <connections>
+                        <outlet property="age" destination="jj4-8s-EDJ" id="tlh-yZ-zWU"/>
+                        <outlet property="description" destination="nGF-P9-BQ0" id="HlT-4I-4FK"/>
+                        <outlet property="location" destination="cu8-00-I5y" id="LEH-eN-MpN"/>
+                        <outlet property="name" destination="ZIW-Ff-heK" id="EWr-NT-UjS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q7y-Ix-m3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1084,7 +1090,7 @@
                                             <outlet property="descriptionLabel" destination="IcY-ia-HHz" id="bla-GK-7pN"/>
                                             <outlet property="nameLabel" destination="CoD-aB-yK7" id="wA0-P5-ER8"/>
                                             <outlet property="ownsBikeLabel" destination="c7D-v6-srN" id="tdd-fM-QtX"/>
-                                            <segue destination="08i-NK-Pix" kind="push" id="mAA-eb-anS"/>
+                                            <segue destination="08i-NK-Pix" kind="push" identifier="showDetail" id="mAA-eb-anS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
