@@ -54,8 +54,10 @@
     [query findObjectsInBackgroundWithBlock: ^(NSArray *objects, NSError *error) {
         if (!error) {
             self.tableData = objects;
+            // self.tableData is an NSMutableArray (mutable means it can accept new, and delete unused objects
+            // objects is an NSArray (once the data is set, it can never change)
+            // The error is being thrown because you're assigning an NSArray to and NSMutableArray object
             [self.bikeBuddiesTableView reloadData];
-            NSLog(@"%@", objects);
         } else {
             NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
@@ -99,14 +101,11 @@
     NSDictionary * buddy = [self.tableData objectAtIndex:indexPath.row];
     cell.backgroundColor = [UIColor clearColor];
     
-    cell.nameLabel.text = [buddy objectForKey:@"username"];
     
-    /*
     cell.nameLabel.text = [buddy objectForKey:@"name"];
     cell.ageDistanceLabel.text = [NSString stringWithFormat:@"%@ | %@", [buddy objectForKey:@"age"], [buddy objectForKey:@"location"]];
     cell.descriptionLabel.text = [buddy objectForKey:@"description"];
-    cell.ownsBikeLabel.text = [buddy objectForKey:@"own"];
-    */
+//    cell.ownsBikeLabel.text = [buddy objectForKey:@"own"];
     
     return cell;
 }

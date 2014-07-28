@@ -27,10 +27,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.editNameViewController.text = [[PFUser currentUser] objectForKey:@"name"];
-    self.editAgeViewController.text = [[PFUser currentUser] objectForKey:@"age"];
-    self.editLocationViewController.text = [[PFUser currentUser] objectForKey:@"location"];
-    self.editInfoPersoViewController.text = [[PFUser currentUser] objectForKey:@"infoPerso"];
+    self.nameTextField.text = [[PFUser currentUser] objectForKey:@"name"];
+    self.ageTextField.text = [[PFUser currentUser] objectForKey:@"age"];
+    self.locationTextField.text = [[PFUser currentUser] objectForKey:@"location"];
+    self.descriptionTextField.text = [[PFUser currentUser] objectForKey:@"description"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,14 +51,15 @@
 */
 
 - (IBAction)saveProfileButtonPressed:(id)sender {
-    NSString*name = self.editNameViewController.text;
+    NSString*name = self.nameTextField.text;
     [PFUser currentUser][@"name"] = name;
-    NSString*age = self.editAgeViewController.text;
+    NSString*age = self.ageTextField.text;
     [PFUser currentUser][@"age"] = age;
-    NSString*location = self.editLocationViewController.text;
+    NSString*location = self.locationTextField.text;
     [PFUser currentUser][@"location"] = location;
-    NSString*infoPerso = self.editInfoPersoViewController.text;
-    [PFUser currentUser][@"infoPerso"] = infoPerso;
+    NSString*description = self.descriptionTextField.text;
+    [PFUser currentUser][@"description"] = description;
+
     [[PFUser currentUser]saveInBackground];
     
 }

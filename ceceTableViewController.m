@@ -35,7 +35,7 @@
             self.bikeTableData = bikeNames;
             [self.tableView reloadData];
                 for (PFObject *bikeName in bikeNames) {
-                    NSLog(bikeName[@"name"]);
+                    NSLog(@"%@", bikeName[@"name"]);
             }
         } else {
             // Log details of the failure

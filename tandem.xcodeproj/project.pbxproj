@@ -53,6 +53,8 @@
 		94DFA00719836B6C009A066B /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DFA00619836B6C009A066B /* SignUpViewController.m */; };
 		94DFA00A19837743009A066B /* TransparentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DFA00919837743009A066B /* TransparentViewController.m */; };
 		94E0099819845B3400786D10 /* icon_60pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 94E0099719845B3400786D10 /* icon_60pt.png */; };
+		94E0099B1984CBA700786D10 /* icon_76pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 94E0099A1984CBA700786D10 /* icon_76pt.png */; };
+		94E0099D1984CD8500786D10 /* icon_152pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 94E0099C1984CD8500786D10 /* icon_152pt.png */; };
 		C10BA20A19847509006F7031 /* ceceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10BA20919847509006F7031 /* ceceTableViewController.m */; };
 		C10BA20B19847509006F7031 /* ceceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10BA20919847509006F7031 /* ceceTableViewController.m */; };
 		C19DC8991984A595000F9B5F /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C19DC8981984A595000F9B5F /* EditProfileViewController.m */; };
@@ -133,6 +135,8 @@
 		94DFA00819837743009A066B /* TransparentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransparentViewController.h; sourceTree = "<group>"; };
 		94DFA00919837743009A066B /* TransparentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransparentViewController.m; sourceTree = "<group>"; };
 		94E0099719845B3400786D10 /* icon_60pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_60pt.png; sourceTree = "<group>"; };
+		94E0099A1984CBA700786D10 /* icon_76pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_76pt.png; sourceTree = "<group>"; };
+		94E0099C1984CD8500786D10 /* icon_152pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_152pt.png; sourceTree = "<group>"; };
 		C10BA20819847509006F7031 /* ceceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ceceTableViewController.h; path = ../ceceTableViewController.h; sourceTree = "<group>"; };
 		C10BA20919847509006F7031 /* ceceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ceceTableViewController.m; path = ../ceceTableViewController.m; sourceTree = "<group>"; };
 		C19DC8971984A595000F9B5F /* EditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
@@ -280,9 +284,8 @@
 				94AAA4BB197B993D0017264B /* AppDelegate.h */,
 				94AAA4BC197B993D0017264B /* AppDelegate.m */,
 				94AAA4BE197B993D0017264B /* Main_iPhone.storyboard */,
-				C19DC8971984A595000F9B5F /* EditProfileViewController.h */,
-				C19DC8981984A595000F9B5F /* EditProfileViewController.m */,
 				94AAA4C1197B993D0017264B /* Main_iPad.storyboard */,
+				94E009991984B4B000786D10 /* Profile */,
 				94214FAB198395A20086CD1C /* Settings */,
 				94214FA719838EF90086CD1C /* Menu */,
 				944DB9C7197E1952006E8FC7 /* Login and Registration */,
@@ -329,17 +332,10 @@
 		94AAA4E6197B99910017264B /* images */ = {
 			isa = PBXGroup;
 			children = (
-				94E0099719845B3400786D10 /* icon_60pt.png */,
-				94D1AB431980C5FD00003560 /* navigationBarBackground.png */,
-				94AAA4EA197C85730017264B /* background.png */,
-				9425E17E197DAD3300F2EBC9 /* bikeBuddiesIcon.png */,
-				944DB9C0197E1650006E8FC7 /* chatIcon.png */,
-				9425E17C197D9C2600F2EBC9 /* logopapered.png */,
-				94582721197DE870008FFA96 /* findTandemsIcon.png */,
-				9458271F197DE77D008FFA96 /* tandemFavoritesIcon.png */,
-				94582723197DE945008FFA96 /* editProfileIcon.png */,
-				943F12F11982DF6100A6EA1D /* textFieldBackground.png */,
-				94AAA4E4197B99880017264B /* logo.png */,
+				94E0099F1984D01B00786D10 /* App Icon */,
+				94E009A11984D06900786D10 /* General */,
+				94E009A01984D04900786D10 /* Menu */,
+				94E009A21984D07A00786D10 /* Misc */,
 			);
 			name = images;
 			sourceTree = "<group>";
@@ -351,6 +347,56 @@
 				94DFA00919837743009A066B /* TransparentViewController.m */,
 			);
 			name = Other;
+			sourceTree = "<group>";
+		};
+		94E009991984B4B000786D10 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C19DC8971984A595000F9B5F /* EditProfileViewController.h */,
+				C19DC8981984A595000F9B5F /* EditProfileViewController.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		94E0099F1984D01B00786D10 /* App Icon */ = {
+			isa = PBXGroup;
+			children = (
+				94E0099719845B3400786D10 /* icon_60pt.png */,
+				94E0099A1984CBA700786D10 /* icon_76pt.png */,
+				94E0099C1984CD8500786D10 /* icon_152pt.png */,
+			);
+			name = "App Icon";
+			sourceTree = "<group>";
+		};
+		94E009A01984D04900786D10 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				9425E17E197DAD3300F2EBC9 /* bikeBuddiesIcon.png */,
+				944DB9C0197E1650006E8FC7 /* chatIcon.png */,
+				94582721197DE870008FFA96 /* findTandemsIcon.png */,
+				9458271F197DE77D008FFA96 /* tandemFavoritesIcon.png */,
+				94582723197DE945008FFA96 /* editProfileIcon.png */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		94E009A11984D06900786D10 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				94D1AB431980C5FD00003560 /* navigationBarBackground.png */,
+				94AAA4EA197C85730017264B /* background.png */,
+				943F12F11982DF6100A6EA1D /* textFieldBackground.png */,
+				94AAA4E4197B99880017264B /* logo.png */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		94E009A21984D07A00786D10 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				9425E17C197D9C2600F2EBC9 /* logopapered.png */,
+			);
+			name = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,11 +484,13 @@
 				94AAA4E5197B99880017264B /* logo.png in Resources */,
 				94AAA4C8197B993D0017264B /* Images.xcassets in Resources */,
 				94582720197DE77D008FFA96 /* tandemFavoritesIcon.png in Resources */,
+				94E0099B1984CBA700786D10 /* icon_76pt.png in Resources */,
 				943F12F21982DF6100A6EA1D /* textFieldBackground.png in Resources */,
 				944DB9C1197E1650006E8FC7 /* chatIcon.png in Resources */,
 				94E0099819845B3400786D10 /* icon_60pt.png in Resources */,
 				94582724197DE945008FFA96 /* editProfileIcon.png in Resources */,
 				94AAA4C0197B993D0017264B /* Main_iPhone.storyboard in Resources */,
+				94E0099D1984CD8500786D10 /* icon_152pt.png in Resources */,
 				94AAA4B7197B993D0017264B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

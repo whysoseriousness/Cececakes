@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HS8-GT-D6n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HS8-GT-D6n">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -268,7 +268,7 @@
         <!--Cece Table View Controller-->
         <scene sceneID="5g1-BH-qgW">
             <objects>
-                <tableViewController id="yhh-Qu-p38" customClass="ceceTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CeceTableViewController" id="yhh-Qu-p38" customClass="ceceTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="CG3-hk-hfz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -365,24 +365,36 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Kph-OY-Jt0" id="xzJ-ve-l3j"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" background="textFieldBackground.png" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="tPJ-ER-WED">
                                 <rect key="frame" x="36" y="330" width="248" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Kph-OY-Jt0" id="dJc-bx-2Oo"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" background="textFieldBackground.png" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="rbd-CX-46X">
                                 <rect key="frame" x="36" y="389" width="248" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Kph-OY-Jt0" id="ZYZ-rt-Ixb"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" background="textFieldBackground.png" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Tuz-PU-Uc5">
                                 <rect key="frame" x="36" y="460" width="248" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Kph-OY-Jt0" id="eWN-IM-S2v"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBz-5b-Okm">
                                 <rect key="frame" x="119" y="223" width="82" height="30"/>
@@ -401,11 +413,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="5Lh-f5-ab2"/>
                     <connections>
-                        <outlet property="editAgeViewController" destination="tPJ-ER-WED" id="fYq-do-j5m"/>
-                        <outlet property="editBikeOwnerViewController" destination="RmU-e1-nY2" id="mG5-LL-7MR"/>
-                        <outlet property="editInfoPersoViewController" destination="Tuz-PU-Uc5" id="M5B-St-7l6"/>
-                        <outlet property="editLocationViewController" destination="rbd-CX-46X" id="Wab-oC-JL0"/>
-                        <outlet property="editNameViewController" destination="yVw-7y-Wxz" id="fAP-ec-5OG"/>
+                        <outlet property="ageTextField" destination="tPJ-ER-WED" id="nqY-cK-9nK"/>
+                        <outlet property="descriptionTextField" destination="Tuz-PU-Uc5" id="wlY-qZ-XK4"/>
+                        <outlet property="locationTextField" destination="rbd-CX-46X" id="4Hc-Vt-Hif"/>
+                        <outlet property="nameTextField" destination="yVw-7y-Wxz" id="9kX-Hl-5Ek"/>
+                        <outlet property="ownsBikeSwitch" destination="RmU-e1-nY2" id="Wfa-r9-aJm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJN-hm-VgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -799,12 +811,61 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.91372555489999996" green="0.53333336109999996" blue="0.52156865600000002" alpha="1" colorSpace="deviceRGB"/>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y76-hz-vup">
+                                <rect key="frame" x="0.0" y="293" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" id="hlL-6l-22j">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="sUV-wY-dBa">
+                                            <rect key="frame" x="16" y="7" width="236" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="M79-bs-geD" id="baC-68-NPa"/>
+                                            </connections>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem title="Item" id="HB0-Zd-wgv"/>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VGY-HR-pxN">
+                                <rect key="frame" x="0.0" y="89" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sWI-gN-UeN">
+                                        <rect key="frame" x="20" y="0.0" width="280" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="M79-bs-geD" id="Kuw-iY-lAP"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="JeT-lq-5ij"/>
+                    <connections>
+                        <outlet property="messageFieldToolbar" destination="Y76-hz-vup" id="rN3-4E-Q8F"/>
+                        <outlet property="messageTextField" destination="sUV-wY-dBa" id="uoS-TW-LLT"/>
+                        <outlet property="searchDisplayController" destination="SQ9-t9-QBV" id="sO2-o8-Ei4"/>
+                        <outlet property="testView" destination="VGY-HR-pxN" id="ruf-6y-5h1"/>
+                        <outlet property="triggerTextField" destination="sWI-gN-UeN" id="cBg-AJ-Z8u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mpV-kj-hmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="SQ9-t9-QBV">
+                    <connections>
+                        <outlet property="delegate" destination="M79-bs-geD" id="rOf-2o-W7A"/>
+                        <outlet property="searchContentsController" destination="M79-bs-geD" id="fVO-8y-W0J"/>
+                        <outlet property="searchResultsDataSource" destination="M79-bs-geD" id="1Ul-Nk-iTY"/>
+                        <outlet property="searchResultsDelegate" destination="M79-bs-geD" id="g8R-fm-7UP"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="2613" y="1490"/>
         </scene>
@@ -830,11 +891,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatPreviewTableViewCell" rowHeight="56" id="LWJ-ks-g1R" customClass="ChatPreviewTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ChatPreviewTableViewCell" rowHeight="56" id="LWJ-ks-g1R" customClass="ChatPreviewTableViewCell">
                                         <rect key="frame" x="0.0" y="22" width="320" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LWJ-ks-g1R" id="eP9-E3-fWr">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m7m-tD-4Gk">
@@ -856,7 +917,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12:35" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcz-pi-ryq">
-                                                    <rect key="frame" x="257" y="6" width="43" height="21"/>
+                                                    <rect key="frame" x="244" y="6" width="43" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                                     <color key="textColor" red="0.52156865600000002" green="0.48235297199999999" blue="0.46274513010000001" alpha="1" colorSpace="deviceRGB"/>
@@ -870,6 +931,7 @@
                                             <outlet property="dateLabel" destination="Gcz-pi-ryq" id="N6E-Vm-5Eg"/>
                                             <outlet property="lastMessagePreviewLabel" destination="yCC-1Z-3Kz" id="dz0-Cx-mKb"/>
                                             <outlet property="nameLabel" destination="eY8-CI-2dt" id="9Jk-nT-24d"/>
+                                            <segue destination="M79-bs-geD" kind="push" id="g3W-SM-4LI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -882,7 +944,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="fPA-bu-dwE"/>
                     <connections>
-                        <segue destination="M79-bs-geD" kind="push" id="0kS-ns-BEY"/>
+                        <outlet property="chatListTableView" destination="xlB-jh-l5g" id="8va-2k-wAK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0P-Hb-wht" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1077,6 +1139,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="0kS-ns-BEY"/>
+        <segue reference="TJr-QM-0wg"/>
     </inferredMetricsTieBreakers>
 </document>

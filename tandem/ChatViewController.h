@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChatViewController : UIViewController
+@interface ChatViewController : UIViewController<UITextFieldDelegate, UIToolbarDelegate>{
+    UITextField * _textField;
+}
+@property (weak, nonatomic) IBOutlet UITextField *triggerTextField;
+@property (weak, nonatomic) IBOutlet UIToolbar *messageFieldToolbar;
+@property (weak, nonatomic) IBOutlet UITextField *messageTextField;
+- (IBAction)sendButtonPressed:(id)sender;
+@property (weak, nonatomic) IBOutlet UIView *testView;
 
 @end

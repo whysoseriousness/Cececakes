@@ -11,4 +11,5 @@
 
 @interface ChatListViewController : UIViewController <UITableViewDataSource>
 @property NSMutableArray * tableData;
+@property (weak, nonatomic) IBOutlet UITableView *chatListTableView;
 @end

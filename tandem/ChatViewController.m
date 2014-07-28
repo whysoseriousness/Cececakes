@@ -22,17 +22,72 @@
     }
     return self;
 }
+//
+//- (void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+////    [self.messageFieldToolbar removeFromSuperview];
+//    
+//}
+//
+//- (void)viewDidLoad
+//{
+//    [super viewDidLoad];
+//    self.messageTextField.inputAccessoryView = self.messageFieldToolbar;
+//    [self.view setNeedsDisplay];
+//
+//    // Do any additional setup after loading the view.
+//}
+//
+//- (void)didReceiveMemoryWarning
+//{
+//    [super didReceiveMemoryWarning];
+//    // Dispose of any resources that can be recreated.
+//}
+//
+//
+//-(BOOL) textFieldShouldBeginEditing:(UITextField*)textField {
+//    NSLog(@"butts");
+////    if([textField isEqual:self.messageTextField]){
+////    textField.inputAccessoryView = self.messageFieldToolbar;
+////    }
+//    return YES;
+//}
+//
+//
+//- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+//    [textField resignFirstResponder];
+//    return YES;
+//}
+//
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+-(void) viewWillAppear:(BOOL)animated{
+    [self.messageFieldToolbar removeFromSuperview];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self reloadInputViews];
+}
+
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+//
+- (UIView *)inputAccessoryView {
+////    if (!_textField) {
+////        _textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
+////        _textField.backgroundColor = [UIColor whiteColor];
+////        _textField.delegate = self;
+////    }
+//    
+    return self.messageFieldToolbar;
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 /*
@@ -46,4 +101,7 @@
 }
 */
 
+- (IBAction)sendButtonPressed:(id)sender {
+    [self.view endEditing:YES];
+}
 @end
