@@ -64,4 +64,54 @@
     [[PFUser currentUser]saveInBackground];
     
 }
+
+
+#pragma mark - TextField Related View Repositiong Methods
+
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    /* keyboard is visible, move views up */
+    [self slideUpWithKeyboard];
+}
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    /* keyboard is no longer visible, move views down */
+    [self slideDownFromTextField:textField];
+    return YES;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    /* keyboard is no longer visible, move views down */
+    [self slideDownWithKeyboard];
+    //    for (UIView * txt in self.view.subviews){
+    //        if ([txt isKindOfClass:[UITextField class]] && [txt isFirstResponder]) {
+    ////            [self slideDownFromTextField: (UITextField *) txt];
+    //        }
+    //    }
+}
+
+-(void) slideUpWithKeyboard{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.275];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    self.view.transform = CGAffineTransformMakeTranslation(0.0f, -1 * kKeyboardHeight);
+    [UIView commitAnimations];
+}
+
+-(void) slideDownWithKeyboard{
+    [self.view endEditing:YES];
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.15];
+    [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+    self.view.transform = CGAffineTransformMakeTranslation(0.0f, 0.0f);
+    [UIView commitAnimations];
+}
+
+
+-(void) slideDownFromTextField: (UITextField * ) textField{
+    [textField resignFirstResponder];
+    [self slideDownWithKeyboard];
+}
+
+
 @end

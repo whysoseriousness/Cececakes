@@ -7,14 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
-@interface ChatViewController : UIViewController<UITextFieldDelegate, UIToolbarDelegate>{
-    UITextField * _textField;
+@interface ChatViewController : UIViewController<UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate>{
+    UIToolbar * composeMessageToolbar;
+    CGRect messagesTableViewFrameNormal;
+    CGRect messagesTableViewFrameSmall;
+    PFUser * me;
 }
-@property (weak, nonatomic) IBOutlet UITextField *triggerTextField;
-@property (weak, nonatomic) IBOutlet UIToolbar *messageFieldToolbar;
-@property (weak, nonatomic) IBOutlet UITextField *messageTextField;
-- (IBAction)sendButtonPressed:(id)sender;
-@property (weak, nonatomic) IBOutlet UIView *testView;
+@property (weak, nonatomic) IBOutlet UITableView *messagesTableView;
+@property NSMutableArray * tableData;
+@property PFUser * them;
+@property UITextField * composeMessageTextField;
 
 @end

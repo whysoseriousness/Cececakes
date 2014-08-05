@@ -143,7 +143,6 @@
 		C10BA20919847509006F7031 /* ceceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ceceTableViewController.m; path = ../ceceTableViewController.m; sourceTree = "<group>"; };
 		C19DC8971984A595000F9B5F /* EditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
 		C19DC8981984A595000F9B5F /* EditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
-		C1EB3D831985E933005ED123 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		C1EB3D841985E933005ED123 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		C1F3C433198340440081C1BD /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		C1F3C434198340440081C1BD /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
@@ -450,6 +449,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Joshua Martin";
 				TargetAttributes = {
+					94AAA4A8197B993D0017264B = {
+						DevelopmentTeam = CX366XA7P2;
+					};
 					94AAA4CC197B993D0017264B = {
 						TestTargetID = 94AAA4A8197B993D0017264B;
 					};
@@ -668,6 +670,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -676,6 +680,7 @@
 				GCC_PREFIX_HEADER = "tandem/tandem-Prefix.pch";
 				INFOPLIST_FILE = "tandem/tandem-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "0D169A49-43BC-468A-87A4-656A6A913E25";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -685,6 +690,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -693,6 +700,7 @@
 				GCC_PREFIX_HEADER = "tandem/tandem-Prefix.pch";
 				INFOPLIST_FILE = "tandem/tandem-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "39D36D1C-0009-4B09-9171-46F716AB3091";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

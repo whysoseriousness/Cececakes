@@ -29,6 +29,7 @@
 //    self.navigationController.navigationBar.topItem.title = @"Chats";
     self.title = @"Chats";
     self.tableData = [NSMutableArray arrayWithObjects:@{@"name" : @"Josh", @"lastMessagePreview" : @"Let's tandem! :D", @"time" : @"1:13"}, nil];
+    [self loadData];
     // Do any additional setup after loading the view.
 }
 
@@ -38,16 +39,29 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+-(void) loadData{
+    PFQuery * getUsers = [PFUser query];
+    [getUsers findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            self.tableData = [NSMutableArray arrayWithArray:objects];
+            [self.chatListTableView reloadData];
+        }else{
+            NSLog(@"chatlist error: %@", error);
+        }
+    }];
+}
+
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"ChatListToChatSegue"]) {
+        ChatViewController *chatViewController = [segue destinationViewController];
+        
+         chatViewController.them = [self.tableData objectAtIndex:[self.chatListTableView indexPathForSelectedRow].row];
+        
+    }
 }
-*/
 
 #pragma mark - UITableViewDataSource Methods
 
@@ -65,5 +79,6 @@
     
     return cell;
 }
+
 
 @end
